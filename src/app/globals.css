@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+@theme {
+    
+    --color-background: #090707;
+    --color-foreground: #FFFFFF;
+  
+    --color-primary: #66BB6A;
+    --color-primary-dark: #1AA34A;
+    --color-primary-light: #1ED760;
+  
+    --color-secondary: #191414;
+    --color-secondary-lighter: #282828;
+  
+  
+    --font-rubik: "Rubik", sans-serif;
+  }
+
+.primary-button{
+    @apply  bg-green-500 rounded-3xl px-10 py-2 text-black font-bold text-2xl cursor-pointer
+}
