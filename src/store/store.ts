@@ -3,7 +3,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // localStorage
+import storage from 'redux-persist/lib/storage';
 import artistReducer from '../slices/profileSlice';
 
 const persistConfig = {
@@ -21,7 +21,7 @@ export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false, // necessário para redux-persist
+      serializableCheck: false,
     }),
 });
 

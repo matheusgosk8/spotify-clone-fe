@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Rubik } from 'next/font/google'
+import { Rubik } from "next/font/google";
 import ReduxProvider from "@/providers/redux.provider";
+import ReactQueryProvider from "@/providers/reactQuery.provider";
+import { ToastProvider } from "@/providers/ToastProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,11 +16,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 const rubik = Rubik({
-  subsets: ['latin'],
-  variable: '--font-rubik',
-})
+  subsets: ["latin"],
+  variable: "--font-rubik",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,10 +32,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body className=" bg-background">
         <ReduxProvider>
-          {children}
+          <ReactQueryProvider>
+            {children}
+            <ToastProvider/>
+          </ReactQueryProvider>
         </ReduxProvider>
       </body>
     </html>
