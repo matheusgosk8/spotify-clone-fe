@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Rubik } from 'next/font/google'
+import ReduxProvider from "@/providers/redux.provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +31,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${rubik.variable} font-sans`}>
-      <body
-        className="font-rubik"
-      >
-        {children}
+    <html lang="en" >
+      <body className=" bg-background">
+        <ReduxProvider>
+          {children}
+        </ReduxProvider>
       </body>
     </html>
   );

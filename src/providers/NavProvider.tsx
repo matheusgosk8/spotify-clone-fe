@@ -5,7 +5,7 @@ import { createContext, useState, useContext } from "react";
 const NavBarContext = createContext<any>(null);
 
 export function NavbarProvider({ children }: { children: React.ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggleSidebar = () => setIsOpen((prev) => !prev);
 
   return (

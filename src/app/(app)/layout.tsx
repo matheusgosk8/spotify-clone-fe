@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../../globals.css";
+import "../globals.css";
 import { Rubik } from 'next/font/google'
 import { NavbarProvider } from "@/providers/NavProvider";
 import NavbarToggle from "@/components/layout/nav/NavButton";
@@ -22,17 +22,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${rubik.variable} font-sans`}>
-
-      <body
-        className="font-rubik"
-      >
-        <NavbarProvider>
-          <NavbarToggle />
-          <NavBar/>
+    <div>
+      <NavbarProvider>
+        <NavbarToggle />
+        <NavBar />
           {children}
-        </NavbarProvider>
-      </body>
-    </html>
+      </NavbarProvider>
+    </div>
+
   );
 }

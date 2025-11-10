@@ -1,6 +1,6 @@
 'use client'
 
-import TopArtists from '@/components/Artists/ArtistsList'
+import Profile from '@/components/Profile/Profile'
 import { useNavBar } from '@/providers/NavProvider'
 
 type Props = {}
@@ -16,12 +16,8 @@ const Home = (props: Props) => {
       `}
       >
       
-      <div className='flex flex-col gap-1'>
-        <h2 className="text-2xl font-semibold">Top artistas</h2>
-        <p>Aqui você encontra os seus artistas preferidos</p>
-      </div>
+     <Profile/>
 
-    <TopArtists/>
   </div>
   )
 }

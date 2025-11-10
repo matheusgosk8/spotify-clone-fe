@@ -9,13 +9,11 @@ export default function TopArtists() {
 
   return (
     <section className="min-h-screen flex flex-col justify-start items-start h-full w-full bg-background text-foreground p-6 space-y-10 overflow-x-hidden">
-      <h2 className="text-2xl font-semibold mb-4">Seus artistas mais ouvidos</h2>
 
       <div className="flex flex-col gap-6 overflow-x-auto pb-3">
         {artists.map((artist, index) => (
           <Link
-            href={artist.external_urls.spotify}
-            target="_blank"
+            href={`/artistas/${artist.id}`}
             key={index}
             className="flex flex-row hover:bg-gray-900 cursor-pointer transition-colors text-white gap-5 shrink-0 group items-center justify-center p-2  rounded-3xl"
           >
