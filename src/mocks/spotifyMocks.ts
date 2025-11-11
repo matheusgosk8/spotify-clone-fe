@@ -267,6 +267,138 @@ export const spotifyTopArtistsStub: SpotifyPaginatedResponse<SpotifyArtist> = {
             popularity: 49,
             type: "artist",
             uri: "spotify:artist:0qJpY7K8p7g6sacvaGNt6i"
+        },
+        {
+            external_urls: {
+                spotify: "https://open.spotify.com/artist/0qJpY7K8p7g6sacvaGNt6i"
+            },
+            followers: {
+                href: null,
+                total: 260504
+            },
+            genres: ["deathcore", "death metal", "metalcore", "metal", "djent"],
+            href: "https://api.spotify.com/v1/artists/0qJpY7K8p7g6sacvaGNt6i",
+            id: "0qJpY7K8p7g6sacvaGNt6i",
+            images: [
+                {
+                    height: 640,
+                    url: "https://i.scdn.co/image/ab6761610000e5eb1b610ecb62f7bf79f6406385",
+                    width: 640
+                },
+                {
+                    height: 320,
+                    url: "https://i.scdn.co/image/ab676161000051741b610ecb62f7bf79f6406385",
+                    width: 320
+                },
+                {
+                    height: 160,
+                    url: "https://i.scdn.co/image/ab6761610000f1781b610ecb62f7bf79f6406385",
+                    width: 160
+                }
+            ],
+            name: "Fit For An Autopsy",
+            popularity: 49,
+            type: "artist",
+            uri: "spotify:artist:0qJpY7K8p7g6sacvaGNt6i"
+        },
+        {
+            external_urls: {
+                spotify: "https://open.spotify.com/artist/0qJpY7K8p7g6sacvaGNt6i"
+            },
+            followers: {
+                href: null,
+                total: 260504
+            },
+            genres: ["deathcore", "death metal", "metalcore", "metal", "djent"],
+            href: "https://api.spotify.com/v1/artists/0qJpY7K8p7g6sacvaGNt6i",
+            id: "0qJpY7K8p7g6sacvaGNt6i",
+            images: [
+                {
+                    height: 640,
+                    url: "https://i.scdn.co/image/ab6761610000e5eb1b610ecb62f7bf79f6406385",
+                    width: 640
+                },
+                {
+                    height: 320,
+                    url: "https://i.scdn.co/image/ab676161000051741b610ecb62f7bf79f6406385",
+                    width: 320
+                },
+                {
+                    height: 160,
+                    url: "https://i.scdn.co/image/ab6761610000f1781b610ecb62f7bf79f6406385",
+                    width: 160
+                }
+            ],
+            name: "Fit For An Autopsy",
+            popularity: 49,
+            type: "artist",
+            uri: "spotify:artist:0qJpY7K8p7g6sacvaGNt6i"
+        },
+        {
+            external_urls: {
+                spotify: "https://open.spotify.com/artist/0qJpY7K8p7g6sacvaGNt6i"
+            },
+            followers: {
+                href: null,
+                total: 260504
+            },
+            genres: ["deathcore", "death metal", "metalcore", "metal", "djent"],
+            href: "https://api.spotify.com/v1/artists/0qJpY7K8p7g6sacvaGNt6i",
+            id: "0qJpY7K8p7g6sacvaGNt6i",
+            images: [
+                {
+                    height: 640,
+                    url: "https://i.scdn.co/image/ab6761610000e5eb1b610ecb62f7bf79f6406385",
+                    width: 640
+                },
+                {
+                    height: 320,
+                    url: "https://i.scdn.co/image/ab676161000051741b610ecb62f7bf79f6406385",
+                    width: 320
+                },
+                {
+                    height: 160,
+                    url: "https://i.scdn.co/image/ab6761610000f1781b610ecb62f7bf79f6406385",
+                    width: 160
+                }
+            ],
+            name: "Fit For An Autopsy",
+            popularity: 49,
+            type: "artist",
+            uri: "spotify:artist:0qJpY7K8p7g6sacvaGNt6i"
+        },
+        {
+            external_urls: {
+                spotify: "https://open.spotify.com/artist/0qJpY7K8p7g6sacvaGNt6i"
+            },
+            followers: {
+                href: null,
+                total: 260504
+            },
+            genres: ["deathcore", "death metal", "metalcore", "metal", "djent"],
+            href: "https://api.spotify.com/v1/artists/0qJpY7K8p7g6sacvaGNt6i",
+            id: "0qJpY7K8p7g6sacvaGNt6i",
+            images: [
+                {
+                    height: 640,
+                    url: "https://i.scdn.co/image/ab6761610000e5eb1b610ecb62f7bf79f6406385",
+                    width: 640
+                },
+                {
+                    height: 320,
+                    url: "https://i.scdn.co/image/ab676161000051741b610ecb62f7bf79f6406385",
+                    width: 320
+                },
+                {
+                    height: 160,
+                    url: "https://i.scdn.co/image/ab6761610000f1781b610ecb62f7bf79f6406385",
+                    width: 160
+                }
+            ],
+            name: "Fit For An Autopsy",
+            popularity: 49,
+            type: "artist",
+            uri: "spotify:artist:0qJpY7K8p7g6sacvaGNt6i"
         }
     ],
     total: 457,

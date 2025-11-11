@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div
       className={`
-        relative min-h-screen w-full bg-background text-foreground transition-all duration-300 ease-in-out pt-10
+        relative min-h-screen bg-background text-foreground transition-all duration-300 ease-in-out pt-10
         ${isOpen ? "md:ml-64" : "md:ml-0"}
       `}
     >

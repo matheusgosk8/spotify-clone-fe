@@ -6,7 +6,7 @@ import { MediaCard } from "./MediaCard";
 
 interface SectionProps {
   title: string;
-  items: {
+  items?: {
     id: string;
     name: string;
     image?: string;
@@ -57,7 +57,7 @@ export function Section({ title, items }: SectionProps) {
           ref={scrollRef}
           className="flex gap-5 overflow-x-hidden scroll-smooth"
         >
-          {items.map((item) => (
+          {items?.map((item) => (
             <MediaCard
               key={item.id}
               name={item.name}

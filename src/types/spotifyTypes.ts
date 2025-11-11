@@ -58,6 +58,8 @@ export interface SpotifyPaginatedResponse<T> {
     total: number
 }
 
+
+
 export interface SpotifyArtist {
     id: string
     name: string
@@ -98,6 +100,7 @@ export interface SpotifyPlaylistTracks {
 export interface SpotifyPlaylistItem {
     description: string;
     external_urls: { spotify: string };
+    collaborative?: boolean
     href: string;
     id: string;
     images: SpotifyImages[];
@@ -143,3 +146,19 @@ export type RawSpotifyProfile= {
     images?: SpotifyImages[] | null
     product?: string;
 }
+
+export type GetTopArtistsResponse = {
+    statusCode: number
+    message: string
+    userTopArtists: SpotifyPaginatedResponse<SpotifyArtist>
+  }
+  export type GetArtistsAlbumsResponse = {
+    statusCode: number
+    message: string
+    artistAlbums: SpotifyPaginatedResponse<ArtistAlbum>
+  }
+  export type GetUserPlaylistsResponse = {
+    statusCode: number
+    message: string
+    userPlaylists: SpotifyPaginatedResponse<SpotifyPlaylistItem>
+  }
