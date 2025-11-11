@@ -12,7 +12,7 @@ const ArtistAlbums = ({artistAlbums}: pageProps) => {
 
 
     return (
-        <div className="">
+        <section className="min-h-screen flex flex-col justify-start items-start h-full w-full bg-background text-foreground p-6 space-y-10 overflow-x-hidden">
             {artistAlbums.length === 0 ? (
                 <p className="text-accent">Nenhum álbum encontrado para este artista.</p>
             ) : (
@@ -25,7 +25,7 @@ const ArtistAlbums = ({artistAlbums}: pageProps) => {
                     </div>
                 </>
             )}
-        </div>
+        </section>
     )
 }
 

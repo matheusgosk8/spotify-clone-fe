@@ -4,6 +4,7 @@ import { Rubik } from 'next/font/google'
 import { NavbarProvider } from "@/providers/NavProvider";
 import NavbarToggle from "@/components/layout/nav/NavButton";
 import NavBar from "@/components/layout/nav/Nav";
+import AuthGuardProvider from "@/providers/AuthGuardProvider";
 
 
 const rubik = Rubik({
@@ -23,11 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <NavbarProvider>
-        <NavbarToggle />
-        <NavBar />
+      <AuthGuardProvider>
+        <NavbarProvider>
+          <NavbarToggle />
+          <NavBar />
           {children}
-      </NavbarProvider>
+        </NavbarProvider>
+      </AuthGuardProvider>
     </div>
 
   );

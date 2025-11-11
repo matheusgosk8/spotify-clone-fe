@@ -1,6 +1,7 @@
-import { ArtistAlbum, SpotifyPlaylistItem } from '@/types/spotifyTypes'
+'use client'
+
+import { SpotifyPlaylistItem } from '@/types/spotifyTypes'
 import Image from 'next/image'
-import React from 'react'
 
 type Props = {
     playlist: SpotifyPlaylistItem,
@@ -8,6 +9,7 @@ type Props = {
 }
 
 const PlaylistItem = ({ playlist, index }: Props) => {
+
     return (
         <div
             key={index}
@@ -20,7 +22,7 @@ const PlaylistItem = ({ playlist, index }: Props) => {
                         alt={playlist.name}
                         fill
                         className="object-cover rounded-md"
-                        sizes="192px"
+                    
                     />
                 ) : (
                     <div className="w-full h-full bg-accent flex items-center justify-center text-sm text-foreground/60">

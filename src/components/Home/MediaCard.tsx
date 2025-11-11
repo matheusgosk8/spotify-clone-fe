@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { FiMusic } from "react-icons/fi";
 
 interface MediaCardProps {
   name: string;
@@ -24,7 +25,7 @@ export function MediaCard({ name, subtitle, image, onReady }: MediaCardProps) {
           />
         ) : (
           <div className="w-full h-full bg-accent flex items-center justify-center text-sm text-foreground/60">
-            Sem imagem
+            <FiMusic size={40} className="text-foreground/50" />
           </div>
         )}
       </div>

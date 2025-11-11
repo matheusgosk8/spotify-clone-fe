@@ -3,8 +3,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // localStorage
-import artistReducer from '../slices/profileSlice';
+import storage from 'redux-persist/lib/storage';
+import profileReducer from '../slices/profileSlice';
+import authReducer from '../slices/authSlice'
 
 const persistConfig = {
   key: 'root',
@@ -12,7 +13,8 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-  artist: artistReducer,
+  profile: profileReducer,
+  auth: authReducer
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -21,7 +23,7 @@ export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false, // necessário para redux-persist
+      serializableCheck: false,
     }),
 });
 

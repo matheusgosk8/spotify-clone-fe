@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     domains: [
       "i.scdn.co",
-      "mosaic.scdn.co"
+      "mosaic.scdn.co",
+      'image-cdn-fa.spotifycdn.com',
+      'image-cdn-ak.spotifycdn.com',
+      'image-cdn.spotifycdn.com',
     ],
     remotePatterns: [
       {
