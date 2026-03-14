@@ -1,4 +1,4 @@
-## Requisitos
+## Features
 
 ### Obrigatórios
 - [x] Segmentação de commits
